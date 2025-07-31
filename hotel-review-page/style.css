@@ -13,7 +13,7 @@ h1{
     font-style: italic;
     font-family: cursive;
     position: relative;
-    color: #c5c5e7;
+    color: #bdbdd5;
     overflow: hidden;
 }
 h1::after {
