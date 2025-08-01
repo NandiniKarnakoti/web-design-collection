@@ -84,27 +84,23 @@ h2 {
     border-radius: 12px;
     margin-top: 2rem;
 }
-
 .tips-text {
     flex: 1 1 50%;
     padding-right: 2rem;
 }
-
 .tips-text h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #dc9e61;
+    color: #e3a86c;
+    font-weight: bold;
 }
-
 .tips-text ul {
     padding-left: 1.2rem;
 }
-
 .tips-image {
     flex: 1 1 45%;
     text-align: center;
 }
-
 .tips-image video {
     width: 100%;
     max-width: 400px;
