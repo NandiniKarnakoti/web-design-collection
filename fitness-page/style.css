@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #3e1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.about p {
+    font-size: 1.1em;
+    background-color: #fff0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #3e1d1d;
+}
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+.tips-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff4e6;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.tips-text {
+    flex: 1 1 50%;
+    padding-right: 2rem;
+}
+
+.tips-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #dc9e61;
+}
+
+.tips-text ul {
+    padding-left: 1.2rem;
+}
+
+.tips-image {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.tips-image video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+footer{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.95em;
+    margin-top: 60px;
+}
+@media (max-width: 900px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .tips-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tips-text, .tips-image {
+        flex: 1 1 100%;
+    }
+    .tips-text h2 {
+        font-size: 1.5em;
+    }
+}
+
